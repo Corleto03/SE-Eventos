@@ -1,16 +1,17 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react"; 
 import { useLocation } from "react-router-dom";
+import "./Chat.css";
 
 export default function Chat() {
   const location = useLocation();
   const user = location.state?.user || { nombre: "Invitado", correo: "" };
 
-  const [step, setStep] = useState(-1); // Saludo inicial
+  const [step, setStep] = useState(-1);
   const [answers, setAnswers] = useState({});
   const [messages, setMessages] = useState([]);
   const [resultado, setResultado] = useState(null);
+  const [inputValue, setInputValue] = useState(""); 
   const chatEndRef = useRef(null);
-  const inputRef = useRef(null);
 
   const preguntas = [
     { id: "tipo_evento", pregunta: "¿Qué tipo de evento deseas?", opciones: ["Boda", "Cumpleaños", "15 años"] },
@@ -21,18 +22,21 @@ export default function Chat() {
     { id: "fecha", pregunta: "¿Cuál es la fecha del evento?" },
   ];
 
-  // Saludo inicial - solo una vez
   useEffect(() => {
-    if (step === -1 && messages.length === 0) {
-      addMessage(
-        `Hola ${user.nombre || user.correo}, bienvenido al asistente de eventos! 😊 Empecemos con unas preguntas para conocer tu evento.`,
-        "bot"
-      );
-      setStep(0);
-    }
-  }, [step, messages]);
+  if (step === -1 && messages.length === 0) {
+    addMessage(
+      `Hola ${user.nombre || user.correo}, bienvenido al asistente de eventos! 😊 Empecemos con unas preguntas para conocer tu evento.`,
+      "bot"
+    );
 
-  // Scroll automático
+    setTimeout(() => {
+      addMessage(preguntas[0].pregunta, "bot");
+      setStep(0);
+    }, 2000); // 800 ms de espera
+  }
+}, [step, messages]);
+
+
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -58,6 +62,8 @@ export default function Chat() {
       enviarRespuestas({ ...answers, [preguntas[step].id]: respuesta });
       setStep(step + 1);
     }
+
+    setInputValue(""); // limpiar input después de responder
   };
 
   const enviarRespuestas = async (respuestasFinales) => {
@@ -79,10 +85,10 @@ export default function Chat() {
   };
 
   return (
-    <div style={styles.chatContainer}>
-      <div style={styles.messagesContainer}>
+    <div className="chat-container">
+      <div className="messages-container">
         {messages.map((msg, i) => (
-          <div key={i} style={msg.sender === "bot" ? styles.botMessage : styles.userMessage}>
+          <div key={i} className={msg.sender === "bot" ? "bot-message" : "user-message"}>
             <pre style={{ margin: 0 }}>{msg.text}</pre>
           </div>
         ))}
@@ -91,84 +97,41 @@ export default function Chat() {
 
       {step >= 0 && step < preguntas.length && (
         preguntas[step].opciones ? (
-          <div style={styles.optionsContainer}>
+          <div className="options-container">
             {preguntas[step].opciones.map(op => (
-              <button key={op} style={styles.optionButton} onClick={() => handleNext(op)}>{op}</button>
+              <button key={op} className="option-button" onClick={() => handleNext(op)}>{op}</button>
             ))}
           </div>
         ) : (
-          <input
-            ref={inputRef}
-            style={styles.input}
-            type="text"
-            onKeyDown={(e) => e.key === "Enter" && handleNext(e.target.value)}
-            placeholder="Escribe tu respuesta y presiona Enter"
-          />
+          preguntas[step].id === "fecha" ? (
+            <input
+              className="input"
+              type="date"
+              min={new Date().toISOString().split("T")[0]} // 👈 evita fechas anteriores a hoy
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && inputValue.trim() !== "") {
+                  handleNext(inputValue);
+                }
+              }}
+            />
+          ) : (
+            <input
+              className="input"
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && inputValue.trim() !== "") {
+                  handleNext(inputValue);
+                }
+              }}
+              placeholder="Escribe tu respuesta y presiona Enter"
+            />
+          )
         )
       )}
     </div>
   );
 }
-
-const styles = {
-  chatContainer: {
-    width: "90%",
-    maxWidth: "800px",
-    margin: "20px auto",
-    border: "1px solid #ccc",
-    borderRadius: "10px",
-    display: "flex",
-    flexDirection: "column",
-    height: "80vh",
-    overflow: "hidden",
-    fontFamily: "Arial, sans-serif",
-    backgroundColor: "#fff"
-  },
-  messagesContainer: {
-    flex: 1,
-    padding: "10px",
-    overflowY: "auto",
-    background: "#f9f9f9",
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-    minHeight: "200px"
-  },
-  botMessage: {
-    alignSelf: "flex-start",
-    background: "#e0e0e0",
-    padding: "10px",
-    borderRadius: "10px",
-    maxWidth: "80%"
-  },
-  userMessage: {
-    alignSelf: "flex-end",
-    background: "#6B73FF",
-    color: "#fff",
-    padding: "10px",
-    borderRadius: "10px",
-    maxWidth: "80%"
-  },
-  optionsContainer: {
-    display: "flex",
-    gap: "10px",
-    padding: "10px",
-    flexWrap: "wrap",
-    background: "#fff"
-  },
-  optionButton: {
-    padding: "10px 15px",
-    borderRadius: "8px",
-    border: "none",
-    background: "#6B73FF",
-    color: "#fff",
-    cursor: "pointer"
-  },
-  input: {
-    padding: "10px",
-    borderRadius: "8px",
-    border: "1px solid #ccc",
-    width: "calc(100% - 20px)",
-    margin: "10px"
-  }
-};

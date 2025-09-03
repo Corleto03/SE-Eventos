@@ -1,0 +1,101 @@
+.chat-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+
+  display: flex;
+  gap: 15px;           /* espacio entre botones */
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: center; /* centrar opciones horizontalmente */
+}
+
+.messages-container {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 200px;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: fit-content;   /* se ajusta al tamaño del texto */
+  max-width: 125%;       /* no se pasa del contenedor */
+  word-wrap: break-word; /* evita que se salga con textos largos */
+  animation: fadeSlideIn 0.5s ease;
+}
+
+
+.user-message {
+  align-self: flex-end;
+  background: #6B73FF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.options-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.option-button {
+  padding: 15px 25px;       /* más grande que antes */
+  border-radius: 10px;
+  border: none;
+  background: #6B73FF;
+  color: #fff;
+  font-size: 1.1rem;        /* tamaño de texto más grande */
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.option-button:hover {
+  transform: scale(1.05);   /* pequeño efecto hover */
+  background: #5a61d1;
+}
+
+/* Opcional: primera pregunta más “centrada” y con margen extra */
+.first-question .options-container {
+  margin-top: 30px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
