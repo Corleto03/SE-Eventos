@@ -3,8 +3,11 @@ import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// Tomamos el clientId del .env de React
+const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <GoogleOAuthProvider clientId="703662483056-3us3gqd8vl8ttpkdkjta3q7i20da4p30.apps.googleusercontent.com">
+  <GoogleOAuthProvider clientId={clientId}>
     <App />
   </GoogleOAuthProvider>
 );
