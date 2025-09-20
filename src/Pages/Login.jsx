@@ -219,6 +219,15 @@ export default function Login() {
               </button>
             </form>
 
+            <div className="signup-link">
+             <p>
+            ¿No tienes cuenta?{" "}
+            <a href="/register" className="signup-link-text">
+              ¡Regístrate!
+            </a>
+        </p>
+          </div>
+
             <div className="social-section">
               <div className="divider">
                 <span>O inicia sesión con</span>

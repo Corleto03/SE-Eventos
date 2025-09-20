@@ -14,6 +14,31 @@ export default function Chat() {
   const [enviando, setEnviando] = useState(false);
   const chatEndRef = useRef(null);
 
+  // Función para formatear fechas
+  const formatearFecha = (fechaISO) => {
+    if (!fechaISO) return "";
+    
+    const fecha = new Date(fechaISO);
+    if (isNaN(fecha.getTime())) return fechaISO;
+    
+    const meses = [
+      "enero", "febrero", "marzo", "abril", "mayo", "junio",
+      "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+    ];
+    
+    const diasSemana = [
+      "domingo", "lunes", "martes", "miércoles", 
+      "jueves", "viernes", "sábado"
+    ];
+    
+    const diaSemana = diasSemana[fecha.getDay()];
+    const dia = fecha.getDate();
+    const mes = meses[fecha.getMonth()];
+    const año = fecha.getFullYear();
+    
+    return `${diaSemana}, ${dia} de ${mes} de ${año}`;
+  };
+
   const preguntas = useMemo(() => [
     { id: "tipo_evento", pregunta: "¿Qué tipo de evento deseas?", opciones: ["Boda", "Cumpleaños", "Quinceaños"] },
     { id: "presupuesto", pregunta: "Ingresa tu presupuesto aproximado en números", tipo: "numero" },
@@ -50,7 +75,14 @@ export default function Chat() {
     if (!confirmando) {
       const key = preguntas[step].id;
       setAnswers(prev => ({ ...prev, [key]: respuesta }));
-      addMessage(respuesta, "user");
+      
+      // Formatear la respuesta si es una fecha
+      let respuestaFormateada = respuesta;
+      if (preguntas[step].tipo === "fecha") {
+        respuestaFormateada = formatearFecha(respuesta);
+      }
+      
+      addMessage(respuestaFormateada, "user");
     }
 
     if (!confirmando && step < preguntas.length - 1) {
@@ -81,6 +113,38 @@ export default function Chat() {
     setInputValue("");
   };
 
+  // Función para generar resumen con fechas formateadas
+  const generateResumen = () => {
+    let resumen = "📋 Resumen de tu evento:\n\n";
+    
+    preguntas.forEach(pregunta => {
+      const respuesta = answers[pregunta.id];
+      if (respuesta) {
+        let respuestaFormateada = respuesta;
+        
+        // Formatear fecha en el resumen
+        if (pregunta.id === "fecha") {
+          respuestaFormateada = formatearFecha(respuesta);
+        }
+        
+        // Formatear presupuesto
+        if (pregunta.id === "presupuesto") {
+          respuestaFormateada = `$${parseFloat(respuesta).toLocaleString()}`;
+        }
+        
+        // Formatear número de invitados
+        if (pregunta.id === "invitados") {
+          respuestaFormateada = `${respuesta} personas`;
+        }
+        
+        const label = pregunta.pregunta.replace("¿", "").replace("?", "");
+        resumen += `• ${label}: ${respuestaFormateada}\n`;
+      }
+    });
+    
+    return resumen;
+  };
+
   const enviarRespuestas = async (respuestasFinales) => {
     try {
       if (respuestasFinales.presupuesto) {
@@ -102,16 +166,27 @@ export default function Chat() {
       const data = await response.json();
       console.log("Respuesta recibida:", data);
 
-      // Mostrar la respuesta formateada
+      // Mostrar el resumen DESPUÉS del análisis
+      const resumen = generateResumen();
+      addMessage(resumen, "bot");
+
+      // Mostrar la respuesta del análisis
       if (data.msg) {
-        addMessage(data.msg, "bot");
+        setTimeout(() => {
+          addMessage(data.msg, "bot");
+        }, 1000);
       }
 
       if (data.recomendacion) {
         setTimeout(() => {
           addMessage(data.recomendacion, "bot");
-        }, 500);
+        }, 1500);
       }
+
+      // Mensaje final opcional
+      setTimeout(() => {
+        addMessage("¿Te gustaría planificar otro evento? Escribe 'nuevo' para comenzar.", "bot");
+      }, 2000);
 
     } catch (err) {
       console.error("Error completo:", err);
