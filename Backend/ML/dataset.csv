@@ -1,0 +1,226 @@
+tipo_evento,invitados,presupuesto,lugar,horario,comida,musica,decoracion,costo_real
+Boda,100,1500,Interior,Noche,Buffet,DJ,Arreglos florales,1800
+Boda,150,2000,Interior,Noche,Buffet,DJ,Arreglos florales,2350
+Boda,200,3000,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,3800
+Cumpleaños,30,500,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,450
+Cumpleaños,50,800,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,950
+Cumpleaños,70,1000,Exterior,Noche,Buffet,Playlist pregrabada,Guirnaldas o globos,1150
+Quinceaños,90,1200,Interior,Día,Buffet,DJ,Guirnaldas o globos,1400
+Quinceaños,120,1500,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2100
+Quinceaños,130,1800,Interior,Noche,Buffet,Música en vivo,Arreglos florales,2400
+Boda,180,2500,Interior,Noche,A la carta,DJ,Centros de mesa elegantes,2900
+Boda,220,3500,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,4000
+Cumpleaños,40,600,Interior,Día,Buffet,DJ,Guirnaldas o globos,700
+Cumpleaños,60,900,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,1050
+Quinceaños,80,1100,Interior,Día,Buffet,DJ,Arreglos florales,1300
+Quinceaños,100,1400,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1700
+Boda,160,2200,Exterior,Noche,A la carta,DJ,Arreglos florales,2600
+Boda,140,1900,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2300
+Cumpleaños,55,850,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,1000
+Quinceaños,110,1600,Interior,Noche,Buffet,Música en vivo,Arreglos florales,2000
+Boda,210,3200,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,3700
+Cumpleaños,25,400,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,380
+Cumpleaños,35,550,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,650
+Cumpleaños,45,750,Exterior,Día,A la carta,DJ,Guirnaldas o globos,880
+Cumpleaños,65,950,Exterior,Noche,Buffet,DJ,Guirnaldas o globos,1100
+Cumpleaños,75,1200,Interior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,1450
+Boda,110,1600,Interior,Día,Buffet,DJ,Arreglos florales,1900
+Boda,120,1700,Interior,Día,Buffet,Música en vivo,Arreglos florales,2100
+Boda,130,1800,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,2150
+Boda,170,2300,Exterior,Día,A la carta,Música en vivo,Arreglos florales,2800
+Boda,190,2700,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,3200
+Quinceaños,70,1000,Interior,Día,Buffet,DJ,Guirnaldas o globos,1200
+Quinceaños,85,1150,Interior,Día,Buffet,Música en vivo,Arreglos florales,1450
+Quinceaños,95,1300,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1550
+Quinceaños,115,1650,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2200
+Quinceaños,125,1750,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,2100
+Cumpleaños,20,350,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,320
+Cumpleaños,80,1100,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,1350
+Boda,250,4000,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,4800
+Boda,90,1400,Interior,Día,Buffet,DJ,Arreglos florales,1650
+Boda,280,4500,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,5200
+Cumpleaños,15,300,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,280
+Cumpleaños,90,1300,Exterior,Noche,Buffet,DJ,Centros de mesa elegantes,1550
+Quinceaños,60,900,Interior,Día,Buffet,DJ,Guirnaldas o globos,1050
+Quinceaños,140,2000,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2650
+Boda,300,5000,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,5800
+Cumpleaños,100,1400,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,1700
+Cumpleaños,85,1250,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1450
+Boda,85,1300,Interior,Día,Buffet,DJ,Arreglos florales,1550
+Boda,240,3800,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,4350
+Quinceaños,105,1450,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1800
+Cumpleaños,22,380,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,350
+Cumpleaños,95,1350,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,1600
+Boda,320,5500,Exterior,Día,A la carta,Música en vivo,Arreglos florales,6300
+Quinceaños,75,1050,Interior,Día,Buffet,DJ,Arreglos florales,1250
+Boda,75,1200,Interior,Día,Buffet,DJ,Arreglos florales,1450
+Cumpleaños,18,320,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,300
+Cumpleaños,52,780,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,920
+Quinceaños,135,1850,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2450
+Boda,260,4200,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,4900
+Cumpleaños,38,580,Interior,Día,Buffet,DJ,Guirnaldas o globos,680
+Boda,195,2800,Exterior,Día,A la carta,DJ,Arreglos florales,3300
+Quinceaños,88,1180,Interior,Día,Buffet,Música en vivo,Guirnaldas o globos,1480
+Cumpleaños,28,450,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,420
+Boda,350,6000,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,6800
+Quinceaños,92,1280,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1520
+Cumpleaños,42,650,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,750
+Boda,115,1650,Interior,Noche,Buffet,Música en vivo,Arreglos florales,2000
+Cumpleaños,48,720,Exterior,Día,A la carta,DJ,Guirnaldas o globos,850
+Quinceaños,78,1080,Interior,Día,Buffet,DJ,Arreglos florales,1280
+Boda,270,4300,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,5000
+Cumpleaños,33,520,Interior,Día,Buffet,Sin música,Guirnaldas o globos,600
+Boda,125,1750,Interior,Día,Buffet,Música en vivo,Arreglos florales,2150
+Quinceaños,118,1580,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2000
+Cumpleaños,62,880,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,1020
+Boda,205,3100,Exterior,Noche,A la carta,DJ,Arreglos florales,3650
+Cumpleaños,72,1080,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1280
+Quinceaños,65,950,Interior,Día,Buffet,DJ,Guirnaldas o globos,1150
+Boda,380,6500,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,7300
+Cumpleaños,26,420,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,390
+Quinceaños,145,2100,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2750
+Boda,155,2100,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,2450
+Cumpleaños,58,820,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,980
+Boda,290,4700,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,5450
+Quinceaños,82,1120,Interior,Día,Buffet,Música en vivo,Arreglos florales,1420
+Cumpleaños,36,560,Interior,Día,Buffet,DJ,Guirnaldas o globos,650
+Boda,135,1850,Interior,Día,Buffet,Música en vivo,Arreglos florales,2250
+Cumpleaños,46,700,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,820
+Quinceaños,98,1350,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1600
+Boda,310,5200,Exterior,Día,A la carta,Música en vivo,Arreglos florales,5950
+Cumpleaños,24,400,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,370
+Boda,165,2250,Interior,Noche,A la carta,DJ,Arreglos florales,2650
+Quinceaños,108,1480,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1850
+Cumpleaños,54,800,Exterior,Día,A la carta,DJ,Guirnaldas o globos,950
+Boda,225,3400,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,4000
+Quinceaños,72,1020,Interior,Día,Buffet,DJ,Arreglos florales,1220
+Cumpleaños,32,500,Interior,Día,Buffet,Sin música,Guirnaldas o globos,580
+Boda,400,7000,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,7800
+Quinceaños,155,2200,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2850
+Cumpleaños,68,980,Interior,Noche,Buffet,DJ,Guirnaldas o globos,1150
+Boda,145,2000,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2400
+Cumpleaños,41,630,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,730
+Quinceaños,86,1160,Interior,Día,Buffet,Música en vivo,Arreglos florales,1460
+Boda,185,2650,Exterior,Día,A la carta,DJ,Centros de mesa elegantes,3150
+Cumpleaños,29,470,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,440
+Boda,175,2400,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2850
+Quinceaños,102,1380,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1650
+Cumpleaños,51,760,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,900
+Boda,330,5700,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,6500
+Quinceaños,76,1060,Interior,Día,Buffet,DJ,Guirnaldas o globos,1260
+Cumpleaños,39,600,Interior,Día,Buffet,DJ,Guirnaldas o globos,700
+Boda,215,3250,Exterior,Noche,A la carta,DJ,Arreglos florales,3800
+Cumpleaños,63,900,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,1050
+Quinceaños,122,1680,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2150
+Boda,255,4100,Exterior,Día,A la carta,Música en vivo,Arreglos florales,4750
+Cumpleaños,27,440,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,410
+Boda,95,1450,Interior,Día,Buffet,DJ,Arreglos florales,1700
+Quinceaños,114,1550,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1950
+Cumpleaños,47,710,Exterior,Día,Buffet,DJ,Guirnaldas o globos,840
+Boda,360,6200,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,7000
+Quinceaños,84,1140,Interior,Día,Buffet,Música en vivo,Arreglos florales,1440
+Cumpleaños,34,530,Interior,Día,Buffet,Sin música,Guirnaldas o globos,610
+Boda,275,4400,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,5100
+Cumpleaños,56,840,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,980
+Quinceaños,96,1320,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1580
+Boda,245,3900,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,4550
+Cumpleaños,21,360,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,340
+Boda,305,5100,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,5850
+Quinceaños,128,1780,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2350
+Cumpleaños,64,920,Interior,Noche,Buffet,DJ,Guirnaldas o globos,1100
+Boda,105,1550,Interior,Día,Buffet,Música en vivo,Arreglos florales,1900
+Cumpleaños,43,660,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,770
+Quinceaños,90,1240,Interior,Día,Buffet,DJ,Arreglos florales,1480
+Boda,285,4600,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,5350
+Cumpleaños,31,490,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,460
+Boda,195,2800,Interior,Noche,A la carta,DJ,Centros de mesa elegantes,3300
+Quinceaños,106,1460,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1830
+Cumpleaños,53,790,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,930
+Boda,340,5800,Exterior,Día,A la carta,Música en vivo,Arreglos florales,6650
+Quinceaños,79,1100,Interior,Día,Buffet,DJ,Guirnaldas o globos,1300
+Cumpleaños,37,570,Interior,Día,Buffet,DJ,Guirnaldas o globos,660
+Boda,235,3600,Exterior,Noche,A la carta,DJ,Arreglos florales,4200
+Cumpleaños,59,860,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,1010
+Quinceaños,126,1740,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2200
+Boda,265,4250,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,4950
+Cumpleaños,25,410,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,380
+Boda,88,1350,Interior,Día,Buffet,DJ,Arreglos florales,1600
+Quinceaños,112,1520,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1920
+Cumpleaños,45,680,Exterior,Día,Buffet,DJ,Guirnaldas o globos,810
+Boda,375,6400,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,7200
+Quinceaños,87,1180,Interior,Día,Buffet,Música en vivo,Arreglos florales,1480
+Cumpleaños,35,540,Interior,Día,Buffet,Sin música,Guirnaldas o globos,620
+Boda,295,4800,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,5550
+Cumpleaños,57,850,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,1000
+Quinceaños,94,1300,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1550
+Boda,315,5300,Exterior,Día,A la carta,Música en vivo,Arreglos florales,6050
+Cumpleaños,23,390,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,360
+Boda,325,5600,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,6400
+Quinceaños,132,1820,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2420
+Cumpleaños,66,960,Interior,Noche,Buffet,DJ,Guirnaldas o globos,1150
+Boda,108,1580,Interior,Día,Buffet,Música en vivo,Arreglos florales,1950
+Cumpleaños,44,670,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,780
+Quinceaños,91,1260,Interior,Día,Buffet,DJ,Arreglos florales,1500
+Boda,365,6300,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,7100
+Cumpleaños,30,480,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,450
+Boda,202,3050,Interior,Noche,A la carta,DJ,Centros de mesa elegantes,3600
+Quinceaños,104,1440,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1810
+Cumpleaños,50,750,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,890
+Boda,355,6100,Exterior,Día,A la carta,Música en vivo,Arreglos florales,6900
+Quinceaños,83,1130,Interior,Día,Buffet,DJ,Guirnaldas o globos,1330
+Cumpleaños,38,580,Interior,Día,Buffet,DJ,Guirnaldas o globos,680
+Boda,248,3950,Exterior,Noche,A la carta,DJ,Arreglos florales,4600
+Cumpleaños,61,890,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,1040
+Quinceaños,119,1620,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2050
+Boda,278,4500,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,5250
+Cumpleaños,26,430,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,400
+Boda,92,1420,Interior,Día,Buffet,DJ,Arreglos florales,1680
+Quinceaños,109,1490,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1870
+Cumpleaños,49,740,Exterior,Día,Buffet,DJ,Guirnaldas o globos,870
+Boda,390,6700,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,7500
+Quinceaños,89,1200,Interior,Día,Buffet,Música en vivo,Arreglos florales,1500
+Cumpleaños,33,510,Interior,Día,Buffet,Sin música,Guirnaldas o globos,590
+Boda,312,5250,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,6100
+Cumpleaños,55,830,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,970
+Quinceaños,97,1340,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1600
+Boda,285,4600,Exterior,Día,A la carta,Música en vivo,Arreglos florales,5350
+Cumpleaños,22,380,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,350
+Boda,335,5750,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,6600
+Quinceaños,124,1700,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2250
+Cumpleaños,67,980,Interior,Noche,Buffet,DJ,Guirnaldas o globos,1170
+Boda,118,1680,Interior,Día,Buffet,Música en vivo,Arreglos florales,2080
+Cumpleaños,41,620,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,720
+Quinceaños,93,1280,Interior,Día,Buffet,DJ,Arreglos florales,1520
+Boda,372,6350,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,7150
+Cumpleaños,28,460,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,430
+Boda,188,2700,Interior,Noche,A la carta,DJ,Centros de mesa elegantes,3200
+Quinceaños,116,1580,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2000
+Cumpleaños,52,780,Exterior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,920
+Boda,345,5900,Exterior,Día,A la carta,Música en vivo,Arreglos florales,6750
+Quinceaños,81,1110,Interior,Día,Buffet,DJ,Guirnaldas o globos,1310
+Cumpleaños,36,550,Interior,Día,Buffet,DJ,Guirnaldas o globos,650
+Boda,258,4150,Exterior,Noche,A la carta,DJ,Arreglos florales,4850
+Cumpleaños,58,870,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,1020
+Quinceaños,121,1660,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,2100
+Boda,298,4850,Exterior,Día,A la carta,Música en vivo,Centros de mesa elegantes,5650
+Cumpleaños,24,400,Interior,Día,No se necesita comida,Playlist pregrabada,Guirnaldas o globos,370
+Boda,78,1250,Interior,Día,Buffet,DJ,Arreglos florales,1500
+Quinceaños,107,1470,Interior,Noche,Buffet,Música en vivo,Centros de mesa elegantes,1850
+Cumpleaños,46,690,Exterior,Día,Buffet,DJ,Guirnaldas o globos,820
+Boda,415,7200,Exterior,Noche,A la carta,Música en vivo,Arreglos florales,8000
+Quinceaños,85,1150,Interior,Día,Buffet,Música en vivo,Arreglos florales,1450
+Cumpleaños,32,500,Interior,Día,Buffet,Sin música,Guirnaldas o globos,580
+Boda,322,5450,Exterior,Noche,A la carta,DJ,Centros de mesa elegantes,6350
+Cumpleaños,54,810,Exterior,Día,A la carta,Playlist pregrabada,Guirnaldas o globos,950
+Quinceaños,99,1360,Interior,Noche,Buffet,DJ,Centros de mesa elegantes,1630
+Boda,268,4300,Exterior,Día,A la carta,Música en vivo,Arreglos florales,5000
+Cumpleaños,20,340,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,320
+Boda,352,6050,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,6950
+Quinceaños,127,1760,Interior,Noche,A la carta,Música en vivo,Arreglos florales,2330
+Cumpleaños,69,1000,Interior,Noche,Buffet,DJ,Guirnaldas o globos,1200
+Boda,128,1780,Interior,Día,Buffet,Música en vivo,Arreglos florales,2200
+Cumpleaños,42,640,Interior,Día,Buffet,Playlist pregrabada,Guirnaldas o globos,740
+Quinceaños,95,1320,Interior,Día,Buffet,DJ,Arreglos florales,1580
+Boda,388,6650,Exterior,Noche,A la carta,Música en vivo,Centros de mesa elegantes,7450
+Cumpleaños,27,440,Interior,Día,No se necesita comida,Sin música,Guirnaldas o globos,410
+Boda,178,2550,Interior,Noche,A la carta,DJ,Centros de mesa elegantes,3000
